@@ -92,19 +92,10 @@ h1 .role{display:block;font-weight:600;font-size:.42em;letter-spacing:0;color:va
 .portrait svg.pins{position:absolute;inset:-26px;width:calc(100% + 52px);height:calc(100% + 52px);color:var(--copper);opacity:.9}
 @media (max-width:760px){.hero{grid-template-columns:1fr;gap:36px;padding-block:44px 32px}.portrait{order:-1;width:190px}}
 
-/* ---------- spec strip (real numbers from the work) ---------- */
-.spec{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:14px;background:var(--surface);overflow:hidden}
-.spec div{padding:18px 20px;border-left:1px solid var(--line)}
-.spec div:first-child{border-left:0}
-.spec b{display:block;font:700 30px/1 var(--display);font-stretch:80%;color:var(--ink);font-variant-numeric:tabular-nums}
-.spec span{display:block;font-size:14px;color:var(--ink-3);margin-top:6px;line-height:1.35}
-@media (max-width:760px){.spec{grid-template-columns:1fr 1fr}.spec div:nth-child(3){border-left:0}.spec div:nth-child(n+3){border-top:1px solid var(--line)}}
-
 /* ---------- sections ---------- */
 section{padding-block:80px 8px;scroll-margin-top:70px}
 .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:32px;border-bottom:1px solid var(--line);padding-bottom:14px}
 .sec-head h2{font:800 clamp(30px,4vw,42px)/1 var(--display);font-stretch:80%;margin:0;letter-spacing:-.005em}
-.sec-head .addr{font:500 12.5px/1 var(--mono);color:var(--copper);letter-spacing:.06em}
 .sec-head p{margin:0 0 0 auto;color:var(--ink-3);font-size:15px;max-width:40ch;text-align:right}
 @media (max-width:760px){.sec-head{flex-wrap:wrap}.sec-head p{margin:0;text-align:left;flex-basis:100%}}
 
@@ -234,17 +225,9 @@ footer{padding-block:24px 48px;display:flex;justify-content:space-between;gap:12
     </div>
   </div>
 
-  <!-- real figures from the work -->
-  <div class="spec" aria-label="Key figures">
-    <div><b>72.3%</b><span>indoor zone accuracy, up from 35.5% (HMM + Wi-Fi fingerprinting)</span></div>
-    <div><b>115,200</b><span>bps interrupt-driven UART link, STM32 ⇄ ESP8266</span></div>
-    <div><b>9</b><span>AT commands in a bare-metal ESP8266 driver library</span></div>
-    <div><b>2 km</b><span>LoRa / LoRaWAN range for IoT temperature tracking</span></div>
-  </div>
-
   <!-- ================= EXPERIENCE ================= -->
   <section id="experience">
-    <div class="sec-head"><span class="addr">0x10</span><h2>Experience</h2><p>Research, embedded development and IoT, across France and Tunisia.</p></div>
+    <div class="sec-head"><h2>Experience</h2><p>Research, embedded development and IoT, across France and Tunisia.</p></div>
     <div class="jobs">
 
       <article class="job">
@@ -294,7 +277,7 @@ footer{padding-block:24px 48px;display:flex;justify-content:space-between;gap:12
 
   <!-- ================= PROJECTS ================= -->
   <section id="projects">
-    <div class="sec-head"><span class="addr">0x20</span><h2>Projects</h2><p>Source code, wiring and build instructions are on GitHub.</p></div>
+    <div class="sec-head"><h2>Projects</h2><p>Source code, wiring and build instructions are on GitHub.</p></div>
     <div class="projects">
 
       <a class="proj featured" href="https://github.com/abdelbaki-ghodhbani/pfe_project_comelit" target="_blank" rel="noopener">
@@ -342,13 +325,13 @@ footer{padding-block:24px 48px;display:flex;justify-content:space-between;gap:12
 
   <!-- ================= SKILLS ================= -->
   <section id="skills">
-    <div class="sec-head"><span class="addr">0x30</span><h2>Technical Skills</h2><p>Tools and technologies I use across firmware, hardware and connectivity.</p></div>
+    <div class="sec-head"><h2>Technical Skills</h2><p>Tools and technologies I use across firmware, hardware and connectivity.</p></div>
     <div class="skills" id="skillGrid"></div>
   </section>
 
   <!-- ================= EDUCATION ================= -->
   <section id="education">
-    <div class="sec-head"><span class="addr">0x40</span><h2>Education</h2></div>
+    <div class="sec-head"><h2>Education</h2></div>
     <div class="trio">
       <div class="card">
         <h3>Degrees</h3>
